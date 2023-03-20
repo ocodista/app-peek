@@ -5,7 +5,7 @@
   "description": "Instant web application previews in VSCode with support for multiple environments",
   "repository": "https://github.com/ocodista/app-peek",
   "publisher": "codista",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.76.0"
   },

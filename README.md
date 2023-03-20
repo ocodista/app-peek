@@ -3,6 +3,12 @@ AppPeek is a powerful and easy-to-use Visual Studio Code extension that provides
 
 With AppPeek, you can quickly switch between Development, Staging, Production, or any other environment you have configured without leaving your coding environment. 🚀
 
+## 📹 Video Demo
+Check out this video demo to see AppPeek in action!
+
+<video src="app-peek-demo.mp4" width="420" height="240" controls preload></video>
+
+
 ## 🌟 Features
 - 🖥️ Instant web application previews in multiple environments
 - 🛠️ Configure custom environments as per your needs

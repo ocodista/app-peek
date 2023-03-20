@@ -6,7 +6,7 @@ With AppPeek, you can quickly switch between Development, Staging, Production, o
 ## 📹 Video Demo
 Check out this video demo to see AppPeek in action!
 
-<video src="app-peek-demo.mp4" width="420" height="240" controls preload></video>
+<video src="https://github.com/ocodista/app-peek/raw/main/app-peek-demo.mp4" width="420" height="240" controls preload></video>
 
 
 ## 🌟 Features

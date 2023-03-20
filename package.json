@@ -3,6 +3,7 @@
   "displayName": "AppPeek",
   "icon": "app-peek-icon.png",
   "description": "Instant web application previews in VSCode with support for multiple environments",
+  "repository": "https://github.com/ocodista/app-peek",
   "publisher": "codista",
   "version": "0.0.1",
   "engines": {

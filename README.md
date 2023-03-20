@@ -15,3 +15,7 @@ With AppPeek, you can quickly switch between Development, Staging, Production, o
 * Enter the environment name (e.g., Development, Staging, Production) and URL.
 * Open an environment preview using the AppPeek: Open Environment Preview command from the command palette.
 * Edit or delete an environment using the AppPeek: Edit Environment or AppPeek: Delete Environment commands from the command palette.
+
+## 👨‍💻 Contributing
+Contributions are welcome!  
+Please feel free to submit a pull request or open an issue. Your feedback and ideas will help us make AppPeek even better! 🌟

@@ -1,0 +1,98 @@
+{
+  "name": "app-peek",
+  "displayName": "AppPeek",
+  "icon": "app-peek-icon.png",
+  "description": "Instant web application previews in VSCode with support for multiple environments",
+  "publisher": "codista",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "apppeek.openAppPeek",
+        "category": "AppPeek",
+        "title": "Open Environment Preview"
+      },
+      {
+        "command": "apppeek.addEnvironment",
+        "category": "AppPeek",
+        "title": "Add Environment"
+      },
+      {
+        "command": "apppeek.editEnvironment",
+        "category": "AppPeek",
+        "title": "Edit Environment"
+      },
+      {
+        "command": "apppeek.deleteEnvironment",
+        "category": "AppPeek",
+        "title": "Delete Environment"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "apppeek.openAppPeek"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "AppPeek Settings",
+      "properties": {
+        "appPeek.environments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Environment Name"
+              },
+              "url": {
+                "type": "string",
+                "description": "Environment URL"
+              }
+            },
+            "required": [
+              "name",
+              "url"
+            ]
+          },
+          "default": [
+            {
+              "name": "Development",
+              "url": "http://localhost:3000"
+            }
+          ],
+          "description": "List of environments to preview using AppPeek"
+        }
+      }
+    },
+    "scripts": {
+      "lint": "eslint .",
+      "pretest": "pnpm run lint",
+      "test": "node ./test/runTest.js"
+    },
+    "devDependencies": {
+      "@types/vscode": "^1.76.0",
+      "@types/glob": "^8.1.0",
+      "@types/mocha": "^10.0.1",
+      "@types/node": "16.x",
+      "eslint": "^8.34.0",
+      "glob": "^8.1.0",
+      "mocha": "^10.2.0",
+      "typescript": "^4.9.5",
+      "@vscode/test-electron": "^2.2.3"
+    }
+  }
+}

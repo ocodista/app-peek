@@ -36,6 +36,13 @@ const addAddEnvironmentCommand = (context) => {
 
     const config = vscode.workspace.getConfiguration("appPeek");
     const environments = config.get("environments") || [];
+
+    const url = await vscode.window.showInputBox({
+      prompt: "Enter environment URL.",
+      value: "https://",
+    });
+    if (!url) return;
+
     const environment = { name, url };
     const isDuplicatedEnvironment = environments.find(
       ({ name }) => name === environment.name
@@ -45,12 +52,6 @@ const addAddEnvironmentCommand = (context) => {
       vscode.window.showErrorMessage(`Environment ${name} already exists.`);
       return;
     }
-
-    const url = await vscode.window.showInputBox({
-      prompt: "Enter environment URL.",
-      value: "https://",
-    });
-    if (!url) return;
 
     // Add the new environment
     environments.push(environment);
